@@ -58,23 +58,23 @@ It is a powerful machine learning algorithm that falls under the category of sup
 
 ### e) K Nearest Neighbor (KNN):
 KNN is a supervised machine learning algorithm. It assumes similar objects are nearer to one another. When the parameters are continuous in that case knn is preferred. In this algorithm it classifies objects by predicting their nearest neighbor. It’s simple and easy to implement and also has high speed because of which it is preferred over the other algorithms when it comes to solving classification problems. The algorithm classifies whether or not the employee has health problem by taking the health treatment dataset as an input. It takes input parameters like age, Gender, etc. and classify person with health treatment. Algorithm takes following steps :- 
-Step 1:  Select the value for K.
-Step 2 : Find the Euclidean distance of K no. of neighbors.
-Step 3 : Based on calculated distance, select the K nearest neighbors in the training data which are nearest to
+- Step 1:  Select the value for K.
+- Step 2 : Find the Euclidean distance of K no. of neighbors.
+- Step 3 : Based on calculated distance, select the K nearest neighbors in the training data which are nearest to
               unknown data points. 
-Step 4 : Calculate no. of data points in each category among these K neighbors.
- Step 5 : Assign new data points to the category which has the maximum no. of neighbors.
-Step 6 : Stop.
+- Step 4 : Calculate no. of data points in each category among these K neighbors.
+- Step 5 : Assign new data points to the category which has the maximum no. of neighbors.
+- Step 6 : Stop.
 
 
 ![image](https://user-images.githubusercontent.com/108256699/208118150-bd10bef6-5b0d-47f1-b98c-580055e4df1e.png)
 
 ## Implementation Steps:
 As we already discussed in the methodology section about some of the implementation details. So, the language used in this project is Python programming. We’re running python code in anaconda navigator’s Jupyter notebook. Jupyter notebook is much faster than Python IDE tools like PyCharm or Visual studio for implementing ML algorithms. The advantage of Jupyter notebook is that while writing code, it’s really helpful for Data visualization and plotting some graphs like histogram and heatmap of correlated matrices. Let’s revise implementation steps : 
-a) Dataset collection.
-b) Importing Libraries : Numpy, Pandas, Scikit-learn, warnings, Matplotlib and Seaborn libraries were used.
-c) Exploratory data analysis : For getting more insights about data.
-d) Data cleaning and preprocessing : Checked for null and junk values using isnull() and isna().sum() functions of python. In Preprocessing phase, we did feature     engineering on our dataset. As we converted categorical variables into numerical variables using function of Pandas library. Both our datasets contains some  categorical variables.
-e) Model selection : We first separated X’s from y’s. X’s are features or input variables of our datasets and y’s are dependent or target variables which are crucial for predicting treatment. Then using by the importing model_selection function of the sklearn library, we splitted our X’s and y’s into train and test split using train_test_split() function of sklearn. We splitted 70% of our data for training and 30% for testing.
-f) Applied ML models and created a confusion matrix of all models.
-g) Deployment of the model which gave the best accuracy.
+- Dataset collection.
+- Importing Libraries : Numpy, Pandas, Scikit-learn, warnings, Matplotlib and Seaborn libraries were used.
+- Exploratory data analysis : For getting more insights about data.
+- Data cleaning and preprocessing : Checked for null and junk values using isnull() and isna().sum() functions of python. In Preprocessing phase, we did feature     engineering on our dataset. As we converted categorical variables into numerical variables using function of Pandas library. Both our datasets contains some  categorical variables.
+- Model selection : We first separated X’s from y’s. X’s are features or input variables of our datasets and y’s are dependent or target variables which are crucial for predicting treatment. Then using by the importing model_selection function of the sklearn library, we splitted our X’s and y’s into train and test split using train_test_split() function of sklearn. We splitted 70% of our data for training and 30% for testing.
+- Applied ML models and created a confusion matrix of all models.
+- Deployment of the model which gave the best accuracy.
